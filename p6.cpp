@@ -1,0 +1,49 @@
+#include<stdio.h>
+int main()
+{
+	int i,j,k,l=7,a=1,b=1,w=1,c=1,n;
+	for(i=1;i<9;i=i+2)
+	{
+		a=1;
+		b=c;
+		for(k=l;k>0;k--)
+		{
+			printf(" ");
+		}
+		for(j=1;j<i;j=j+2)
+		{
+			printf("%d",a);
+			a++;
+		}
+		for(n=1;n<=w;n++)
+		{
+			printf("%d",b);
+			b--;
+		}
+		printf("\n");
+		l--;
+		c++;
+		w++;
+	}
+	a=3;
+	b=2;
+	for(i=5;i>0;i=i-2)
+	{
+		for(k=0;k<=l+1;k++)
+		{
+			printf(" ");
+		}
+		for(j=1;j<=a;j++)
+		{
+			printf("%d",j);
+		}
+		for(j=b;j>=1;j--)
+		{
+			printf("%d",j);
+		}
+		printf("\n");
+		l++;
+		a--;
+		b--;
+	}
+}
